@@ -7,4 +7,6 @@ $database = "todolist";
 
 $conn = new mysqli($servername, $user, $passwd, $database);
 
-?>
+
+
+

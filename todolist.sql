@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-01-2025 a las 13:15:36
+-- Tiempo de generación: 30-01-2025 a las 08:52:23
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 7.4.20
 
@@ -30,10 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `messages` (
   `id` int(255) NOT NULL,
   `identificator` varchar(255) NOT NULL,
-  `message` varchar(255) NOT NULL
+  `message` varchar(255) NOT NULL,
+  `fecha` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
 
 --
 -- Índices para tablas volcadas
@@ -45,7 +44,6 @@ CREATE TABLE `messages` (
 ALTER TABLE `messages`
   ADD PRIMARY KEY (`id`);
 
-
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
@@ -54,7 +52,8 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT de la tabla `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
