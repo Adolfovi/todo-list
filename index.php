@@ -27,6 +27,10 @@ require("./manageData/getTasks.php");
             <input type="text" name="tarea" placeholder="Escribe una tarea">
             <input type="submit" name="createTask" value="Añadir Tarea" id="añadirTarea">
         </form>
+        <form method="post" id="comentarioPrincipal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <input type="text" name="tarea" placeholder="Escribe una tarea">
+            <input type="submit" name="createTask" value="Añadir Tarea" id="añadirTarea">
+        </form>
     
         <div id="lista" class="lista-tareas">
         
