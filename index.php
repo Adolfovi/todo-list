@@ -23,11 +23,11 @@ require("./manageData/getTasks.php");
     <div class="wrapp">
         <h1>Nuestro Gestor de Tareas</h1>
 
-        <form method="post" id="comentarioPrincipal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <form method="post" id="insertarTarea" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <input type="text" name="tarea" placeholder="Escribe una tarea">
             <input type="submit" name="createTask" value="Añadir Tarea" id="añadirTarea">
         </form>
-        <form method="post" id="comentarioPrincipal" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <form method="post" id="editarTarea" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <input type="text" name="tarea" placeholder="Escribe una tarea">
             <input type="submit" name="createTask" value="Añadir Tarea" id="añadirTarea">
         </form>
