@@ -26,7 +26,9 @@ require("./manageData/setChecked.php");
     <!-- Formulario para editar tarea -->
     <form method="post" id="editarTarea" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <input type="text" name="editTarea" placeholder="Escribe una tarea">
-        <input type="submit" name="createTask" value="Editar Tarea" id="añadirTarea">
+        <input type="submit" name="editTask" value="Editar Tarea" id="editarTareaSubmit">
+        <input type="hidden" name="identificatorforEdit" value="">
+
     </form>
 
     <div id="lista" class="lista-tareas">
@@ -46,7 +48,10 @@ require("./manageData/setChecked.php");
                             <input type="hidden" name="identificator" value="' . $tasks[$i][0] . '">
                         </form>
                         ' . $tasks[$i][1] . '
-                        <button class="borrarTarea">Modificar tarea</button>
+                        <div class="actionButtons">
+                        <button class="editarTarea"><img src="edit.png"/></button>
+                        <button class="borrarTarea"><img src="delete.png"/></button>                        
+                        </div>
                     </label>
                 </div>
             ';
