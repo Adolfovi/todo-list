@@ -6,10 +6,11 @@ if (isset($_POST['createTask'])) {
     // Obtenemos los datos del formulario
     $fecha = (new DateTime())->format('Y-m-d H:i:s');
     $mensaje = trim($_POST['tarea']);
+    $checked = '0';
     $identificator = substr(str_shuffle("aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ"), 0, 10);
 
     // Preparar la consulta SQL
-    $consulta = "INSERT INTO messages (identificator, message, fecha) VALUES ('$identificator', '$mensaje', '$fecha')";
+    $consulta = "INSERT INTO messages (identificator, message,checked ,fecha) VALUES ('$identificator', '$mensaje', '$checked' ,'$fecha')";
 
     // Ejecutar la consulta
     $resultado = mysqli_query($conn, $consulta);

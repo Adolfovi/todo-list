@@ -31,7 +31,7 @@ CREATE TABLE `messages` (
   `id` int(255) NOT NULL,
   `identificator` varchar(255) NOT NULL,
   `message` varchar(255) NOT NULL,
-  `checked` BIT,
+  `checked` varchar(1) NOT NULL,
   `fecha` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
