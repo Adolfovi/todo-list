@@ -38,7 +38,19 @@ require("./manageData/setChecked.php");
             </div>
         </div>
 
+        <div class="deleteFormContainer hidden">
+            <div class="close">
+                <button class="closeContainer">X</button>
+            </div>
 
+            <div class="Form">
+                <form method="post" id="borrarTarea" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                    <input type="hidden" name="identificator">
+                    <span>¿Estas seguro?</span>
+                    <input type="submit" name="editTask" value="Borrar Tarea" id="deleteTareaSubmit">
+                </form>
+            </div>
+        </div>
 
         <div id="lista" class="lista-tareas">
             <?php
