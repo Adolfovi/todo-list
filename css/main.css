@@ -181,6 +181,7 @@ label input[type="checkbox"]{
 
 .deleteFormContainer span{
     font-size: 25px;
+    width: 10rem;
 }
 
 
@@ -192,6 +193,10 @@ label input[type="checkbox"]{
 }
 
 .editFormContainer .Form{
+    width: 100%;
+}
+
+.editFormContainer .Form form span{
     width: 100%;
 }
 
