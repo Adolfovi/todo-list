@@ -217,6 +217,10 @@ label input[type="checkbox"]{
     width: 100%;
 }
 
+.deleteFormContainer input{
+    font-size: 20px;
+}
+
 .deleteFormContainer{
     width: 25rem !important;
 }
