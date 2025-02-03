@@ -68,7 +68,7 @@ require("./manageData/setChecked.php");
                             <input type="submit" name="setChecked" value="' . $tasks[$i][2] . '" class="' . $buttonClass . '">
                             <input type="hidden" name="identificator" value="' . $tasks[$i][0] . '">
                         </form>
-                        ' . $tasks[$i][1] . '
+                        <span>' . $tasks[$i][1] . '</span>
                         <div class="actionButtons">
                         <button class="editarTarea"><img src="edit.png"/></button>
                         <button class="borrarTarea"><img src="delete.png"/></button>                        

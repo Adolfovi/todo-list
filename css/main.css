@@ -114,21 +114,25 @@ label input[type="checkbox"]{
 
 
 .tarea label .editarTarea img{
-    width: 1rem !important;
+    width: 0.8rem !important;
     
 }
 
 .tarea label .borrarTarea img{
-        width: 1rem !important;
+        width: 0.8rem !important;
         
 }
 
 .tarea label .actionButtons button{
     padding: 0.5rem;
-    
+    display: flex;
+    flex-direction: column;
 }
 
-
+.tarea label .actionButtons{
+    display: flex;
+    justify-content: center;
+}
 
 .editFormContainer{
     display: flex;
@@ -173,4 +177,16 @@ label input[type="checkbox"]{
     display: flex;
     width: 400px;
     justify-content: space-around;
+}
+
+.deleteFormContainer span{
+    font-size: 25px;
+}
+
+
+
+.tarea label form, span, div{
+    width: 33.3333333%;
+    display: flex;
+    justify-content: center;
 }
