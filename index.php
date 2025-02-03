@@ -2,6 +2,7 @@
 require("./manageData/insertTask.php");
 require("./manageData/getTasks.php");
 require("./manageData/setChecked.php");
+require("./manageData/deleteTask.php");
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +48,7 @@ require("./manageData/setChecked.php");
                 <form method="post" id="borrarTarea" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                     <input type="hidden" name="identificator">
                     <span>¿Estas seguro?</span>
-                    <input type="submit" name="editTask" value="Borrar Tarea" id="deleteTareaSubmit">
+                    <input type="submit" name="deleteTask" value="Borrar Tarea" id="deleteTareaSubmit">
                 </form>
             </div>
         </div>
