@@ -185,8 +185,33 @@ label input[type="checkbox"]{
 
 
 
-.tarea label form, span, div{
+#lista .tarea label form, span, div{
     width: 33.3333333%;
     display: flex;
     justify-content: center;
+}
+
+.editFormContainer .Form{
+    width: 100%;
+}
+
+.editFormContainer{
+    width: 25rem !important;
+}
+
+
+.editFormContainer .close{
+    width: 100%;
+}
+
+.deleteFormContainer .Form{
+    width: 100%;
+}
+
+.deleteFormContainer .close{
+    width: 100%;
+}
+
+.deleteFormContainer{
+    width: 25rem !important;
 }
