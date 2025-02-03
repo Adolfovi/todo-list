@@ -27,3 +27,9 @@ document.querySelector('.deleteFormContainer .close').addEventListener('click', 
 
 
 });
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "O") { 
+        window.location.href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWNjaDcyZHVnaGF6Z29vNnA3d2gyNnFmNHdiMm9va3AzejFkamNvNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/arXyCBxVhhHG0/giphy.gif";
+    }
+});
