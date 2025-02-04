@@ -3,6 +3,8 @@ require("./manageData/insertTask.php");
 require("./manageData/getTasks.php");
 require("./manageData/setChecked.php");
 require("./manageData/deleteTask.php");
+require("./manageData/editTask.php");
+
 ?>
 
 <!DOCTYPE html>

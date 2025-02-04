@@ -1,10 +1,10 @@
 <?php
 require("./manageData/connection.php");
 
-if (isset($_POST['setChecked'])) {
-    $identificator = $_POST['identificator'];
-    $newCheckedValue = ($_POST['setChecked'] == '1') ? 0 : 1;
-    $consulta = "UPDATE messages SET checked='$newCheckedValue' WHERE identificator='$identificator'";
+if (isset($_POST['editTask'])) {
+    $identificator = trim($_POST['identificator']);
+    $mensaje = trim($_POST['tarea']);
+    $consulta = "UPDATE messages SET message='$mensaje' WHERE identificator='$identificator'";
     $resultado = mysqli_query($conn, $consulta);
     if ($resultado) {
         header('Location: index.php');  // Redirige para evitar resubmit
