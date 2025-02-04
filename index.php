@@ -33,6 +33,7 @@ require("./manageData/deleteTask.php");
 
             <div class="Form">
                 <form method="post" id="editarTarea" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                    <input type="hidden" name="identificator">
                     <input type="text" name="tarea" placeholder="Inserta el nuevo valor">
                     <input type="submit" name="editTask" value="Editar Tarea" id="editarTareaSubmit">
                 </form>

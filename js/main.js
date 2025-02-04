@@ -58,3 +58,11 @@ document.querySelectorAll('.editarTarea').forEach((boton) =>{
 document.querySelector('.editFormContainer .closeContainer').addEventListener('click', () => {
     document.querySelector('.editFormContainer').classList.add('hidden');
 });
+
+
+
+document.querySelectorAll('.editarTarea').forEach((e)=>{
+    e.addEventListener('click', ()=>{
+        document.querySelector('#editarTarea input[name="identificator"]').value = e.parentNode.parentNode.querySelector("input[name='identificator']").value;
+    });
+});
