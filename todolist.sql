@@ -28,7 +28,6 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `messages` (
-  `id` int(255) NOT NULL,
   `identificator` varchar(255) NOT NULL,
   `message` varchar(255) NOT NULL,
   `checked` varchar(1) NOT NULL,
@@ -43,7 +42,7 @@ CREATE TABLE `messages` (
 -- Indices de la tabla `messages`
 --
 ALTER TABLE `messages`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`identificator`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -52,9 +51,9 @@ ALTER TABLE `messages`
 --
 -- AUTO_INCREMENT de la tabla `messages`
 --
-ALTER TABLE `messages`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
-COMMIT;
+--ALTER TABLE `messages`
+--  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+--COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
