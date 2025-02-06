@@ -242,6 +242,12 @@ label input[type="checkbox"]{
 
 #editarTareaSubmit{
     cursor: pointer;
+    transition: all 0.25s;
+}
+
+#editarTareaSubmit:hover{
+    background-color: #d6d6d6;
+    transition: all 0.25s;
 }
 
 #deleteTareaSubmit{
