@@ -182,6 +182,8 @@ label input[type="checkbox"]{
 .deleteFormContainer span{
     font-size: 25px;
     width: 10rem;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -244,8 +246,26 @@ label input[type="checkbox"]{
 
 #deleteTareaSubmit{
     cursor: pointer;
+    transition: all 0.25s;
+    padding: 0.5rem 0.5rem;
+}
+
+#deleteTareaSubmit:hover{
+    background-color: #d6d6d6;
+    transition: all 0.25s;
 }
 
 .closeContainer{
     cursor: pointer;
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: bolder;
+    transition: all 0.25s;
+
+}
+
+.closeContainer:hover{
+    background-color: #d6d6d6;
+    transition: all 0.25s;
 }
