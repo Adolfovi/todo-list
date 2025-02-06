@@ -224,3 +224,28 @@ label input[type="checkbox"]{
 .deleteFormContainer{
     width: 25rem !important;
 }
+
+
+#añadirTarea{
+    cursor: pointer;
+}
+
+.editarTarea{
+    cursor: pointer;
+}
+
+.borrarTarea{
+    cursor: pointer;
+}
+
+#editarTareaSubmit{
+    cursor: pointer;
+}
+
+#deleteTareaSubmit{
+    cursor: pointer;
+}
+
+.closeContainer{
+    cursor: pointer;
+}
