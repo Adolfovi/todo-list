@@ -7,8 +7,6 @@ body{
 .wrapp{
     display: flex;
     width: 800px;
-    height: 900px;
-    background-color: azure;
     align-items: center;
     flex-direction: column;
 
